@@ -1,0 +1,283 @@
+/*general*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: auto;
+    }
+
+.text-rouge
+    {
+        color: rgba(114, 11, 11, 0.589);
+    }
+
+/*Navbar*/
+.navbar
+    {
+        width: 100%;
+        background-color: rgb(79, 107, 243);
+        background-image: linear-gradient(43deg, rgba(114, 229, 245, 0.945) 0%, rgb(245, 250, 18) 46%, rgba(87, 252, 11, 0.897) 100%);
+
+        /* background-color: rgb(241, 79, 79); */
+    }
+
+#my-navbar
+    {
+        justify-content: flex-end;
+        font-size: 18px;
+    }
+
+#my-navbar li
+    {
+        margin: auto 15px;
+    }
+
+#my-navbar li a
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(42, 78, 1)
+    }
+#my-navbar li a:hover
+    {
+        color: white;
+    }
+
+.navbar .navbar-brand
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+    }
+
+.navbar-light .navbar-brand
+    {
+        color: white !important;
+    }
+
+.navbar .navbar-collapse
+    {
+        text-align: center;
+    }
+
+.navbar-toggler
+    {
+        border-style: none;
+        position: absolute;
+        right: 2%;
+        top: 15%;
+    }
+
+/*Cover*/
+#cover
+    {
+        height: 600px;
+        background: url("images/sunset-2210870_1920.jpg") center;
+        background-attachment: fixed;
+        background-size: cover;
+        margin-top: 60px;
+    }
+
+#cover h2
+    {
+        text-align: center;
+        color: white;
+        padding-top: 160px;
+        margin-bottom: 35px;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px black;
+    }
+
+#cover button
+    {
+        float: right;
+        margin-left: 40%;
+        background-color: rgb(36, 4, 4) !important;
+        font-size: 22px;
+        width: 250px;
+        height: 60px;
+        /* position: sticky; */
+        box-shadow: 0px 8px 5px rgb(29, 28, 28);
+    }
+#cover button:hover
+    {
+        background-color: rgba(19, 1, 1, 0.97) !important;
+    }
+
+/*Hotel*/
+#hotel
+    {
+        padding: 40px 10px;
+    }
+
+#hotel h2
+    {
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: #444
+    }
+
+#hotel p
+    {
+        font-size: 18px;
+        color: #444;
+        padding: 35px 10px;
+    }
+
+/*atouts*/
+#atouts
+    {
+        background: url("images/background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 70px 20px;
+    }
+
+/*Panel*/
+.panel
+    {
+        margin-bottom: 10px;
+    }
+
+.panel-heading
+    {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #3ee038;
+        color: white;
+    }
+
+.panel-body
+    {
+        background-color: rgba(190, 201, 131, 0.7);
+        padding: 15px;
+        text-align: center;
+    }
+
+/*Images-sejour*/
+#images-sejour
+    {
+        padding: 35px 10px;
+        transition: all 0.3s ease-in 0.3s;
+    }
+
+#images-sejour h2
+    {
+        font-size: 35px;
+        margin-top: 40px;
+        text-align: right;
+        border-bottom: 2px #777 solid;
+        font-weight: bold;
+        color: #777;
+        line-height: 60px;
+    }
+
+.img-thumbnail:hover
+    {
+        transition: all 0.3s ease-in 0.3s;
+        transform: scale(1.1);
+    }
+.right
+    {
+        padding-top: 15px;
+        text-align: right;
+    }
+
+/*tarifs*/
+#tarifs
+    {
+        /* background-color: rgb(221, 63, 63); */
+        background-color: #330a18;
+    }
+
+#tarifs .heading h2
+    {
+        display: inline-block;
+        width: 260px;
+        text-align: left;
+        color: white;
+        padding-top: 1%;
+        font-size: 2.4rem;
+        border-bottom: 2px white solid;       
+
+    }
+
+.tarifs-bloc
+    {
+        background-color: white;
+        margin: 20px 0px;
+        padding: 15px;
+        color: #777;
+        border-radius: 6px;
+        box-shadow: 4px 4px 8px #444;
+    }
+
+.tarifs-bloc h2
+    {
+        color: #444;
+        border-bottom: 1px #444 solid;
+    }
+
+/*Reserver*/
+form
+    {
+        /* margin: 50px auto; */
+        width: 75%;
+        margin: auto;
+        box-shadow: 3px 3px 3px 3px rgb(165, 15, 15);
+    }
+
+#reserver
+    {
+        background-color: #f5f5f5;
+        padding-top: 45px;
+    }
+
+.form-group
+    {
+        border: 5px white solid;
+        border-radius: 8px;
+        padding: 10%;
+    }
+#apropos
+{
+    background: #FFFFFF;
+}
+#apropos .heading h2
+{
+    color: #fff
+}
+#apropos .thumbnail img
+{
+    width : 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#apropos .thumbnail img:hover
+{
+    filter: none;
+    -webkit-filter: none;
+}
+.col-md-5
+{
+    background: #d2fcd1
+}
+#carou img
+{
+    width: 100%;
+    height: 100%;
+}
+.tarifs-bloc p
+{
+    padding: 20px;
+    font-size: 25px;
+}
